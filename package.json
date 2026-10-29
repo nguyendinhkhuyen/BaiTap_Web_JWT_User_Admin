@@ -1,0 +1,23 @@
+{
+  "name": "campus-jwt-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bài tập Công nghệ lập trình Web: JWT và phân quyền user/admin",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "prestart": "node scripts/setup.js",
+    "start": "node src/server.js",
+    "predev": "node scripts/setup.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
